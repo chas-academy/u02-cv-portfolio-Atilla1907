@@ -1,0 +1,93 @@
+$primary-color: #002b55;
+$gradient-start: #87cfea;
+$gradient-end: blue;
+$text-color: #333;
+$font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$breakpoint: 768px;
+
+body {
+    font-family: $font-stack;
+    color: $text-color;
+}
+.Profile-photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    margin: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+
+    @media (min-width: $breakpoint) {
+        flex-direction: row;
+        max-width: 100%;
+    }
+}
+
+.sidebar {
+    background-image: linear-gradient(to bottom right, $gradient-start, $gradient-end);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        font-size: x-large;
+        margin: 10px;
+    }
+
+    .contact-info p, 
+    .skills li {
+        font-size: medium;
+        margin: 5px;
+    }
+
+    .skills {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .links a {
+        display: inline-block;
+        color: #fff;
+        margin: 5px;
+    }
+}
+
+.main-content {
+    padding: 20px;
+
+    .about, 
+    .education {
+        margin-bottom: 20px;
+
+        h2 {
+            color: $primary-color;
+            font-size: x-large;
+        }
+    }
+
+    p, 
+    .education-item {
+        font-size: small;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .youtube-video {
+        align-items: center;
+        text-align: center;
+
+        iframe {
+            margin: auto;
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
