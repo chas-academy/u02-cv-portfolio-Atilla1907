@@ -41,16 +41,42 @@ body {
         margin: 10px;
     }
 
-    .contact-info p, 
-    .skills li {
-        font-size: medium;
-        margin: 5px;
+    .contact-info {
+        table {
+            width: 100%;
+            margin: 10px 0;
+            border-spacing: 0;
+
+            tr {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px 0;
+
+                td:first-child {
+                    width: 20%;
+                    text-align: left;
+                    font-size: large;
+                }
+
+                td:last-child {
+                    width: 80%;
+                    text-align: left;
+                    font-size: medium;
+                }
+            }
+        }
     }
 
     .skills {
         list-style-type: none;
         padding: 0;
         margin-top: 10px;
+
+        li {
+            font-size: medium;
+            margin: 5px;
+        }
     }
 
     .links a {
