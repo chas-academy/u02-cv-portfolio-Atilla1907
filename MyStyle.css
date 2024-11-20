@@ -35,15 +35,35 @@ body {
   font-size: x-large;
   margin: 10px;
 }
-.sidebar .contact-info p,
-.sidebar .skills li {
+.sidebar .contact-info table {
+  width: 100%;
+  margin: 10px 0;
+  border-spacing: 0;
+}
+.sidebar .contact-info table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.sidebar .contact-info table tr td:first-child {
+  width: 20%;
+  text-align: center;
+  font-size: large;
+}
+.sidebar .contact-info table tr td:last-child {
+  width: 80%;
+  text-align: left;
   font-size: medium;
-  margin: 5px;
 }
 .sidebar .skills {
   list-style-type: none;
   padding: 0;
   margin-top: 10px;
+}
+.sidebar .skills li {
+  font-size: medium;
+  margin: 5px;
 }
 .sidebar .links a {
   display: inline-block;
